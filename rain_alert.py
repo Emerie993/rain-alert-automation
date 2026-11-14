@@ -3,9 +3,6 @@ import requests
 from twilio.rest import Client
 
 
-# OWM_API_KEY = "1a009c627b74792d25715e0a99a91ade"
-# sid = "ACb1e0b1854c69799e9a81a0c43921c952"
-# token = "d7c86c771c7306788ee9a4034777aecc"
 MY_LAT = 6.852290
 MY_LONG = 7.395650
 
@@ -13,12 +10,12 @@ OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/forecast"
 account_token = os.environ["ACCOUNT_TOKEN"]
 account_sid  = os.environ["ACCOUNT_SID"]
 owm_api_key = os.environ["OWM_API_KEY"]
-TEST_LAT = 44.314842
-TEST_LONG = -85.602364
+# TEST_LAT = 44.314842
+# TEST_LONG = -85.602364
 
 parameters ={
-    "lat" : TEST_LAT,
-    "lon" : TEST_LONG,
+    "lat" : MY_LAT,
+    "lon" : MY_LONG,
     "appid": owm_api_key,
     "cnt" : 4
 }
